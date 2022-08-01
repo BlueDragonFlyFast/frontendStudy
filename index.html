@@ -5,6 +5,9 @@
         p {
             color: red;
         }
+        caption {
+            caption-side: bottom;
+        }
         div {
             border-bottom:2px solid black;
         }
@@ -23,8 +26,7 @@
     <!-- body of page -->
     <!-- Deprecated but working -->
     <div>
-        <a name="top"></a>
-        <a href="#bottom">Down</a>
+        <a href="#bottom" id="top">Down</a>
     </div>
 
 
@@ -46,7 +48,7 @@
     <div>
         <details>
             <summary>
-                    Six types of headers demonstrative list
+                Six types of headers demonstrative list
             </summary>
             <ul>
                 <li><h1>one</h1></li>
@@ -74,7 +76,7 @@
     <div>
         <table>
             <!-- Deprecated but working -->
-            <caption align="bottom">Режим дня (утром)</caption>
+            <caption>Режим дня (утром)</caption>
             <tr>
                 <th>Что</th>
                 <th>Где</th>
@@ -108,8 +110,7 @@
 
     <div>
         <!-- Deprecated but working -->
-        <a name="bottom"></a>
-        <a href="#top">Up</a>
+        <a href="#top" rel="noopener noreferrer" id="bottom">Up</a>
     </div>
 
 
