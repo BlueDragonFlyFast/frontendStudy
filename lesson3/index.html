@@ -4,25 +4,23 @@
     <meta charset="UTF-8">
     <title>ColoredBlock</title>
     <link rel="stylesheet" href="../lesson3/modal.css">
-    <script src = "../lesson3/ChangeColor.js"> </script>
 
 </head>
-<body>
-    <div style = "background-color: pink; width: 10em; height: 10em;" id = "pb"> </div>
-    <button onclick="changeColor()">Push</button>
-    <button id="show-modal">Modal Window</button>
-
-    <script>
-        (function () {
-            alert('1');
-            // создаём модальное окно
-            let modal = $modal();
-            // при клике по кнопке #show-modal
-            document.querySelector('#show-modal').addEventListener('click', function () {
-                // отобразим модальное окно
-                modal.show();
-            });
-        })();
-    </script>
-</body>
+    <body>
+    <div style="padding: 3em;">
+        <div style="background-color: pink; width: 10em; height: 10em;" id = "pb"> </div>
+        <button onclick="changeColor()">Push</button>
+        <button id="show-modal">Modal Window</button>
+    </div>
+    <div id="outFrame" class="screenFrame">
+        <div id="window" style="background-color: #F0F0F0; width: 10em; height: 16em;  padding: 3em;">
+            <div id="winCont" style="background-color: pink; width: 10em; height: 10em;"></div>
+            <p>This is how initial rectangle was looking</p>
+            <button id="close">Close</button>
+        </div>
+    </div>
+    <script src = "../lesson3/modalWindowLogic.js">  </script>
+    <script src = "../lesson3/ChangeColor.js"> </script>
+    <script src = "../lesson3/printDateAndTime.js"> </script>
+    </body>
 </html>
