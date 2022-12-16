@@ -15,10 +15,10 @@ const $modal = {
     }
 };
 
-(function () {
+//(function () {
     document.querySelector('#show-modal').addEventListener('click', () =>  $modal.show());
     document.querySelector('#close').addEventListener('click', () =>  $modal.close());
-})();
+//})();
 
 window.onclick = function(event) {
     if (event.target == $modal.oFrame) {

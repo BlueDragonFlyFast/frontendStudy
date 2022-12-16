@@ -8,14 +8,14 @@
 </head>
     <body>
     <div style="padding: 3em;">
-        <div style="background-color: pink; width: 10em; height: 10em;" id = "pb"> </div>
+        <div class=coloredRectangle id = "pb"> </div>
         <button onclick="changeColor()">Push</button>
         <button id="show-modal">Modal Window</button>
     </div>
-    <div id="outFrame" class="screenFrame">
+    <div id="outFrame" class="backgroundFrame">
         <div id="window" style="background-color: #F0F0F0; width: 10em; height: 16em;  padding: 3em;">
-            <div id="winCont" style="background-color: pink; width: 10em; height: 10em;"></div>
-            <p>This is how initial rectangle was looking</p>
+            <div id="winCont"class=coloredRectangle></div>
+            <p style="text-align: center">This is how initial rectangle was looking</p>
             <button id="close">Close</button>
         </div>
     </div>
