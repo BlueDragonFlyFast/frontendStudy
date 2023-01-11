@@ -174,7 +174,7 @@
 }
 
 .booksRateFlexItem {
-
+	width: 37vw;
 }
 
 .mainRatePage {
@@ -218,7 +218,7 @@ h2 {
 
 .rateLineTemplate {
     display: grid;
-    grid-template-columns: 100px 50px auto;
+    grid-template-columns: 100px 50px 30vw;
     grid-template-rows: auto;
     grid-template-areas:
     "img . title "
